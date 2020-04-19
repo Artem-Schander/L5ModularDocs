@@ -9,7 +9,7 @@ documentationText: Get Started →
 documentationLink: /getting-started/
 features:
 - title: Organized Codebase
-  details: The main goal of L5Modular is to build more organized projects by separate the project into a modules. Each module represents a part of the project that works independently from other modules.
+  details: The main goal of L5Modular is to build better organized projects by separate the project into modules.
 - title: Reusable Modules
   details: A nice side effect is the reusability of the modules. There are often enough projects where you don't have to reinvent the wheel. A platform to share and look for modules will be soon published.
 - title: Free & Open Source
