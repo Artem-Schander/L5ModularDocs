@@ -1,7 +1,7 @@
 # Usage
 
 In most cases there is not much to consider. Just add files to your modules, keep the PSR-4 autoloading conventions in mind and you're good.  
-However, some components can only be correctly used if you know how laravel handles them.
+However, some components can only be correctly used if you know how Laravel handles them.
 
 <br>
 <br>

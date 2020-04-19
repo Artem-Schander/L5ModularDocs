@@ -37,7 +37,7 @@ module.exports = {
         logo: '/assets/logo-no-borders-bicolor.svg',
         nav: [
             { text: 'Home', link: '/' },
-            { text: 'Free Modules', link: 'https://google.com' },
+            { text: 'Free Modules', link: 'https://share.l5modular.com' },
         ],
         sidebar: ['/', '/introduction/', '/getting-started/', '/usage/', '/artisan-commands/', '/configuration/'],
         // sidebar: [
