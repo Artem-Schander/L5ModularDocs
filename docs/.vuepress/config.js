@@ -35,20 +35,15 @@ module.exports = {
     ],
     themeConfig: {
         logo: '/assets/logo-no-borders-bicolor.svg',
-        nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Free Modules', link: 'https://share.l5modular.com' },
-        ],
+        nav: [{ text: 'Free Modules', link: 'https://share.l5modular.com' }],
         sidebar: ['/', '/introduction/', '/getting-started/', '/usage/', '/artisan-commands/', '/configuration/'],
-        // sidebar: [
-        //     { title: 'Home', path: '/' },
-        //     { title: 'Introduction', path: '/introduction/' },
-        //     {
-        //         title: 'Installation',
-        //         path: '/installation/',
-        //         children: ['/', '/installation/requirements'],
-        //     },
-        // ],
+        repo: 'Artem-Schander/L5Modular',
+        repoLabel: 'Contribute!',
+        docsRepo: 'Artem-Schander/L5ModularDocs',
+        docsDir: 'docs',
+        editLinks: true,
+        editLinkText: 'Help us improve this page!',
+        smoothScroll: true,
     },
     markdown: {
         lineNumbers: false,
