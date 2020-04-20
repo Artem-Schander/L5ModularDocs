@@ -101,10 +101,10 @@ export default {
       & + .action-button
         margin-left: 6px
       &.is-decent
-        background-color $decentAccentColor
-        border-bottom 1px solid darken($decentAccentColor, 10%)
+        background-color $alternativeAccentColor
+        border-bottom 1px solid darken($alternativeAccentColor, 10%)
         &:hover
-          background-color lighten($decentAccentColor, 10%)
+          background-color lighten($alternativeAccentColor, 10%)
       &.external svg
         display: none
   .features

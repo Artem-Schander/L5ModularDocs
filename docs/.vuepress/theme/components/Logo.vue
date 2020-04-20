@@ -60,21 +60,27 @@ export default {
 
   .cls-1
     fill: #e5f9eb
+    fill: #8ceaa4
 
   .cls-2
     fill: #c8edd3
+    fill: #54b27e
 
   .cls-3
     fill: #e8957c
+    fill: #c14023
 
   .cls-4
     fill: #eda391
+    fill: #d35442
 
   .cls-5
     fill: #f4d3ce
+    fill: #ed897e
 
   .cls-6
     fill: #bee5c8
+    fill: #3ba06c
 
   .fade-enter-active, .fade-leave-active
     transition: opacity .15s ease
