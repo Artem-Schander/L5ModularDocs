@@ -91,7 +91,7 @@ class FancyService
 <br>
 
 ## Good to know
-Mentionable behaviour and possible deviations to expectations.
+Noteworthy behavior and possible deviations from expectations.
 
 ::: tip INFO
 In most cases there is not much to consider. Just add files to your modules, keep the PSR-4 autoloading conventions in mind and you're good.  
