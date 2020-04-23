@@ -73,7 +73,7 @@ L5Modular::enabled('HelloWorld');
 
 Often enough there is a need to load additional classes into a module. Since Laravel loads the app using the [PSR-4](http://www.php-fig.org/psr/psr-4/) autoloading standard, you can just add folders and files almost without limitations. The only thing you should keep in mind is to name the file exactly like the class name and to add the correct namespace.
 
-F.a. If you want to add the `app/Modules/HelloWorld/Services/FancyService.php` to your module, you can absolutely do so. The file could then look like this
+F.a. If you want to add the file `Services/FancyService.php` to the `HelloWorld` module, you can absolutely do so. The class could then look like this:
 
 ```php
 <?php
@@ -103,7 +103,7 @@ However, some components can only be correctly used if you know how Laravel hand
 ### Views
 
 To tell Laravel that you want to render a view file from a specific module, you need to use the double-colon syntax.  
-The `welcome.blade.php` from the example module `HelloWorld` could be rendered like this
+The `welcome.blade.php` from the example module `HelloWorld` could be rendered like this:
 
 ```php
 return view("HelloWorld::welcome");
