@@ -4,7 +4,7 @@ sidebarDepth: 3
 
 # Usage
 
-All your modules should work just like the regular Laravel equivalents.
+All your module components should work just like the regular Laravel equivalents.
 In addition, you can check the availability and status of each module and interact with it.
 
 <br>
