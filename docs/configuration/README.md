@@ -1,3 +1,7 @@
+---
+sidebarDepth: 3
+---
+
 # Configuration
 
 The behaviour of this package is highly customizable.
@@ -214,13 +218,13 @@ Besides that, this is the right place to disable modules.
 ### Disable a module
 
 To disable a module you need to set the `enabled` setting to `false`.  
-The config to disable the FooBar module would then look like this
+The config to disable the HelloWorld module would then look like this
 
 ```php
 return [
     // ...
     'specific' => [
-        'FooBar' => [
+        'HelloWorld' => [
             'enabled' => false,
         ],
     ]
@@ -231,13 +235,13 @@ return [
 
 ### Change the routing
 
-To change the routing to load only a simple `routes.php` for the FooBar module you would need this config
+To change the routing to load only a simple `routes.php` for the HelloWorld module you would need this config
 
 ```php
 return [
     // ...
     'specific' => [
-        'FooBar' => [
+        'HelloWorld' => [
             'routing' => [ 'simple' ],
         ],
     ]
@@ -254,7 +258,7 @@ You can completely customize the structure of each module.
 return [
     // ...
     'specific' => [
-        'FooBar' => [
+        'HelloWorld' => [
             'routing' => [ 'simple' ],
             'structure' => [
                 'controllers' => 'Controllers',
@@ -280,26 +284,26 @@ With this config the service provider would expect the following structure and l
 laravel-project/
     app/
     └── Modules/
-        └── FooBar/
+        └── HelloWorld/
             ├── Controllers
-            │   └── FooBarController.php
+            │   └── HelloWorldController.php
             ├── Entities
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Resources
-            │   └── FooBarResource.php
+            │   └── HelloWorldResource.php
             ├── Requests
-            │   └── FooBarRequest.php
+            │   └── HelloWorldRequest.php
             ├── Translations
             │   └── en.php
             ├── Views
             │   └── index.blade.php
             ├── database
             │   ├── factories
-            │   │   └── FooBarFactory.php
+            │   │   └── HelloWorldFactory.php
             │   ├── migrations
             │   │   └── xxx_create_foo_bars_table.php
             │   └── seeds
-            │       └── FooBarSeeder.php
+            │       └── HelloWorldSeeder.php
             ├── helpers.php
             └── routes.php
 ```
@@ -310,7 +314,7 @@ laravel-project/
 ## Separate Config File In A Module
 
 Any config from `specific` can also be applied by creating a `config.php` into the root of a module.  
-A valid example would be `app/Modules/FooBar/config.php`
+A valid example would be `app/Modules/HelloWorld/config.php`
 
 ```php
 return = [
@@ -333,9 +337,9 @@ If both variants exist, they will be merged in favor of `config/modules.php`.
 ## Custom Configurations
 
 In addition to the settings used by this package you can put any type of config into both, the `specific` and the separate `config.php`.
-The merged config will always be accessible in two ways `config('modules.specific.FooBar')` and/or `config('FooBar')`.
+The merged config will always be accessible in two ways `config('modules.specific.HelloWorld')` and/or `config('HelloWorld')`.
 
-Example: `app/Modules/FooBar/config.php`
+Example: `app/Modules/HelloWorld/config.php`
 
 ```php
 return = [
@@ -344,4 +348,4 @@ return = [
 ];
 ```
 
-In this case the value of `custom` could be accessed by `config('modules.specific.FooBar.custom')` or simply by `config('FooBar.custom')`.
+In this case the value of `custom` could be accessed by `config('modules.specific.HelloWorld.custom')` or simply by `config('HelloWorld.custom')`.

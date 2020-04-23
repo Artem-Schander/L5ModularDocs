@@ -8,24 +8,28 @@ Run the following command in a bash prompt from your projects root.
 composer require artem-schander/l5-modular
 ```
 
-#### Requirements
-
+::: tip REQUIREMENTS
 L5Modular v2 requires **at least** PHP 7.2 and Laravel 5.7  
 Older PHP / Laravel versions are supported by L5Modular v1.
+:::
 
 <br>
 <br>
 
 ## Generating A Module
 
-The built in Artisan command `php artisan make:module foo-bar` generates a ready to use module in the `app/Modules` folder.  
+The built in Artisan command `php artisan make:module hello-world` generates a ready to use module in the `app/Modules` folder.  
 
-The welcome method in the generated controller `Http/Controllers/FooBarController.php`, the corresponding route in `routes/web.php` and the view `welcome.blade.php`, make it easy to dive in.  
+The welcome method in the generated controller `Http/Controllers/HelloWorldController.php`, the corresponding route in `routes/web.php` and the view `welcome.blade.php`, make it easy to dive in.  
 
-You should now be able to see the output of `Modules/FooBar/resources/views/welcome.blade.php` by opening `http://laravel-project.dev/foo-bar` in your browser.  
-*This can differ depending to your local development environment*
+You should now be able to see the output of `Modules/HelloWorld/resources/views/welcome.blade.php` by opening `http://laravel-project.dev/hello-world` in your browser.  
 
 ![welcome screen acreenshot](/assets/l5modular-screenshot.png)
+
+::: warning
+The host can differ depending to your local development environment
+:::
+
 
 
 <br>
@@ -39,12 +43,12 @@ Unless [otherwise configured](/configuration/), this is how the generated module
 laravel-project/
     app/
     └── Modules/
-        └── FooBar
+        └── HelloWorld
             ├── Http
             │   └── Controllers
-            │       └── FooBarController.php
+            │       └── HelloWorldController.php
             ├── Models
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── resources
             │   ├── lang
             │   │   └── en.php
@@ -67,38 +71,38 @@ Of course it is also possible to [add any kind of additional classes](/usage/loa
 laravel-project/
     app/
     └── Modules/
-        └── FooBar
+        └── HelloWorld
             ├── Events
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Http
             │   ├── Controllers
-            │   │   └── FooBarController.php
+            │   │   └── HelloWorldController.php
             │   ├── Requests
-            │   │   └── FooBar.php
+            │   │   └── HelloWorld.php
             │   └── Resources
-            │       └── FooBar.php
+            │       └── HelloWorld.php
             ├── Jobs
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Listeners
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Mail
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Models
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Notifications
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Observers
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Rules
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── config.php
             ├── database
             │   ├── factories
-            │   │   └── FooBarFactory.php
+            │   │   └── HelloWorldFactory.php
             │   ├── migrations
             │   │   └── 2020_04_19_111656_create_foo_bars_table.php
             │   └── seeds
-            │       └── FooBarSeeder.php
+            │       └── HelloWorldSeeder.php
             ├── helpers.php
             ├── resources
             │   ├── lang

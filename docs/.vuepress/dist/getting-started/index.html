@@ -21,7 +21,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="msapplication-TileImage" content="/assets/tile-vibrant.png">
     <meta name="msapplication-TileColor" content="#c8edd3">
-    <link rel="preload" href="/assets/css/0.styles.264e45d9.css" as="style"><link rel="preload" href="/assets/js/app.6ccec451.js" as="script"><link rel="preload" href="/assets/js/2.7f77a655.js" as="script"><link rel="preload" href="/assets/js/9.e932c1af.js" as="script"><link rel="prefetch" href="/assets/js/10.1c663328.js"><link rel="prefetch" href="/assets/js/11.a5470012.js"><link rel="prefetch" href="/assets/js/12.42f97e27.js"><link rel="prefetch" href="/assets/js/3.08c083e9.js"><link rel="prefetch" href="/assets/js/4.2ca28233.js"><link rel="prefetch" href="/assets/js/5.7f4b8647.js"><link rel="prefetch" href="/assets/js/6.6090c75d.js"><link rel="prefetch" href="/assets/js/7.83fd95c7.js"><link rel="prefetch" href="/assets/js/8.754be772.js">
+    <link rel="preload" href="/assets/css/0.styles.264e45d9.css" as="style"><link rel="preload" href="/assets/js/app.883d655a.js" as="script"><link rel="preload" href="/assets/js/2.7f77a655.js" as="script"><link rel="preload" href="/assets/js/9.69625fca.js" as="script"><link rel="prefetch" href="/assets/js/10.9dc36343.js"><link rel="prefetch" href="/assets/js/11.6c6a84df.js"><link rel="prefetch" href="/assets/js/12.42f97e27.js"><link rel="prefetch" href="/assets/js/3.08c083e9.js"><link rel="prefetch" href="/assets/js/4.2ca28233.js"><link rel="prefetch" href="/assets/js/5.7f4b8647.js"><link rel="prefetch" href="/assets/js/6.d92956bb.js"><link rel="prefetch" href="/assets/js/7.08d2671d.js"><link rel="prefetch" href="/assets/js/8.81ea8109.js">
     <link rel="stylesheet" href="/assets/css/0.styles.264e45d9.css">
   </head>
   <body>
@@ -35,16 +35,16 @@
     Contribute!
     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">Home</a></li><li><a href="/introduction/" class="sidebar-link">Introduction</a></li><li><a href="/getting-started/" class="active sidebar-link">Getting Started</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/getting-started/#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/getting-started/#generating-a-module" class="sidebar-link">Generating A Module</a></li></ul></li><li><a href="/usage/" class="sidebar-link">Usage</a></li><li><a href="/artisan-commands/" class="sidebar-link">Artisan Commands</a></li><li><a href="/configuration/" class="sidebar-link">Configuration</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="getting-started"><a href="#getting-started" class="header-anchor">#</a> Getting Started</h1> <h2 id="installation"><a href="#installation" class="header-anchor">#</a> Installation</h2> <p>The easiest way to install this package is through your terminal via Composer.<br>
 Run the following command in a bash prompt from your projects root.</p> <div class="language-bash extra-class"><pre class="language-bash"><code>composer require artem-schander/l5-modular
-</code></pre></div><h4 id="requirements"><a href="#requirements" class="header-anchor">#</a> Requirements</h4> <p>L5Modular v2 requires <strong>at least</strong> PHP 7.2 and Laravel 5.7<br>
-Older PHP / Laravel versions are supported by L5Modular v1.</p> <br> <br> <h2 id="generating-a-module"><a href="#generating-a-module" class="header-anchor">#</a> Generating A Module</h2> <p>The built in Artisan command <code>php artisan make:module foo-bar</code> generates a ready to use module in the <code>app/Modules</code> folder.</p> <p>The welcome method in the generated controller <code>Http/Controllers/FooBarController.php</code>, the corresponding route in <code>routes/web.php</code> and the view <code>welcome.blade.php</code>, make it easy to dive in.</p> <p>You should now be able to see the output of <code>Modules/FooBar/resources/views/welcome.blade.php</code> by opening <code>http://laravel-project.dev/foo-bar</code> in your browser.<br> <em>This can differ depending to your local development environment</em></p> <p><img src="/assets/l5modular-screenshot.png" alt="welcome screen acreenshot"></p> <br> <br> <h4 id="default-module"><a href="#default-module" class="header-anchor">#</a> Default Module</h4> <p>Unless <a href="/configuration/">otherwise configured</a>, this is how the generated module would look like.</p> <div class="language- extra-class"><pre class="language-text"><code>laravel-project/
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">REQUIREMENTS</p> <p>L5Modular v2 requires <strong>at least</strong> PHP 7.2 and Laravel 5.7<br>
+Older PHP / Laravel versions are supported by L5Modular v1.</p></div> <br> <br> <h2 id="generating-a-module"><a href="#generating-a-module" class="header-anchor">#</a> Generating A Module</h2> <p>The built in Artisan command <code>php artisan make:module hello-world</code> generates a ready to use module in the <code>app/Modules</code> folder.</p> <p>The welcome method in the generated controller <code>Http/Controllers/HelloWorldController.php</code>, the corresponding route in <code>routes/web.php</code> and the view <code>welcome.blade.php</code>, make it easy to dive in.</p> <p>You should now be able to see the output of <code>Modules/HelloWorld/resources/views/welcome.blade.php</code> by opening <code>http://laravel-project.dev/hello-world</code> in your browser.</p> <p><img src="/assets/l5modular-screenshot.png" alt="welcome screen acreenshot"></p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>The host can differ depending to your local development environment</p></div> <br> <br> <h4 id="default-module"><a href="#default-module" class="header-anchor">#</a> Default Module</h4> <p>Unless <a href="/configuration/">otherwise configured</a>, this is how the generated module would look like.</p> <div class="language- extra-class"><pre class="language-text"><code>laravel-project/
     app/
     └── Modules/
-        └── FooBar
+        └── HelloWorld
             ├── Http
             │   └── Controllers
-            │       └── FooBarController.php
+            │       └── HelloWorldController.php
             ├── Models
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── resources
             │   ├── lang
             │   │   └── en.php
@@ -57,38 +57,38 @@ Older PHP / Laravel versions are supported by L5Modular v1.</p> <br> <br> <h2 id
 Of course it is also possible to <a href="/usage/loading-additional-classes/">add any kind of additional classes</a> to any module, as long as it follows the PSR-4 autoloading convention.</p> <div class="language- extra-class"><pre class="language-text"><code>laravel-project/
     app/
     └── Modules/
-        └── FooBar
+        └── HelloWorld
             ├── Events
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Http
             │   ├── Controllers
-            │   │   └── FooBarController.php
+            │   │   └── HelloWorldController.php
             │   ├── Requests
-            │   │   └── FooBar.php
+            │   │   └── HelloWorld.php
             │   └── Resources
-            │       └── FooBar.php
+            │       └── HelloWorld.php
             ├── Jobs
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Listeners
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Mail
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Models
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Notifications
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Observers
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── Rules
-            │   └── FooBar.php
+            │   └── HelloWorld.php
             ├── config.php
             ├── database
             │   ├── factories
-            │   │   └── FooBarFactory.php
+            │   │   └── HelloWorldFactory.php
             │   ├── migrations
             │   │   └── 2020_04_19_111656_create_foo_bars_table.php
             │   └── seeds
-            │       └── FooBarSeeder.php
+            │       └── HelloWorldSeeder.php
             ├── helpers.php
             ├── resources
             │   ├── lang
@@ -107,6 +107,6 @@ Of course it is also possible to <a href="/usage/loading-additional-classes/">ad
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.6ccec451.js" defer></script><script src="/assets/js/2.7f77a655.js" defer></script><script src="/assets/js/9.e932c1af.js" defer></script>
+    <script src="/assets/js/app.883d655a.js" defer></script><script src="/assets/js/2.7f77a655.js" defer></script><script src="/assets/js/9.69625fca.js" defer></script>
   </body>
 </html>

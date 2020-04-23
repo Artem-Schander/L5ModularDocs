@@ -86,10 +86,10 @@ Options:
 Example:  
 
 ```bash
-php artisan make:module:controller MemberController --module=FooBar --model=Member
+php artisan make:module:controller MemberController --module=HelloWorld --model=Member
 ```
 
-This would create a RESTful Resource Controller `app/Modules/FooBar/Http/Controllers/MemberController.php` and ask you if you want to generate the `Member` model as well, if it doesn't already exist.
+This would create a RESTful Resource Controller `app/Modules/HelloWorld/Http/Controllers/MemberController.php` and ask you if you want to generate the `Member` model as well, if it doesn't already exist.
 
 </details>
 
