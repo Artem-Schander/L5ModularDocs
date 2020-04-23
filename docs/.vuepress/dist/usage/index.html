@@ -21,7 +21,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="msapplication-TileImage" content="/assets/tile-vibrant.png">
     <meta name="msapplication-TileColor" content="#c8edd3">
-    <link rel="preload" href="/assets/css/0.styles.264e45d9.css" as="style"><link rel="preload" href="/assets/js/app.32db50d4.js" as="script"><link rel="preload" href="/assets/js/2.7f77a655.js" as="script"><link rel="preload" href="/assets/js/11.e094bf9a.js" as="script"><link rel="prefetch" href="/assets/js/10.949793b1.js"><link rel="prefetch" href="/assets/js/12.42f97e27.js"><link rel="prefetch" href="/assets/js/3.08c083e9.js"><link rel="prefetch" href="/assets/js/4.2ca28233.js"><link rel="prefetch" href="/assets/js/5.7f4b8647.js"><link rel="prefetch" href="/assets/js/6.6090c75d.js"><link rel="prefetch" href="/assets/js/7.98efaebf.js"><link rel="prefetch" href="/assets/js/8.6c4e4a0e.js"><link rel="prefetch" href="/assets/js/9.b3f497fc.js">
+    <link rel="preload" href="/assets/css/0.styles.264e45d9.css" as="style"><link rel="preload" href="/assets/js/app.3ebc009e.js" as="script"><link rel="preload" href="/assets/js/2.7f77a655.js" as="script"><link rel="preload" href="/assets/js/11.9fba0389.js" as="script"><link rel="prefetch" href="/assets/js/10.949793b1.js"><link rel="prefetch" href="/assets/js/12.42f97e27.js"><link rel="prefetch" href="/assets/js/3.08c083e9.js"><link rel="prefetch" href="/assets/js/4.2ca28233.js"><link rel="prefetch" href="/assets/js/5.7f4b8647.js"><link rel="prefetch" href="/assets/js/6.6ef0a3c3.js"><link rel="prefetch" href="/assets/js/7.63012c74.js"><link rel="prefetch" href="/assets/js/8.6693fc16.js"><link rel="prefetch" href="/assets/js/9.dd5d4dff.js">
     <link rel="stylesheet" href="/assets/css/0.styles.264e45d9.css">
   </head>
   <body>
@@ -50,7 +50,7 @@ To enable a module permanently you need to <a href="/configuration/#disable-a-mo
         <span class="token keyword">return</span> <span class="token single-quoted-string string">'some output'</span><span class="token punctuation">;</span>
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span>
-</span></code></pre></div><br> <br> <h2 id="good-to-know"><a href="#good-to-know" class="header-anchor">#</a> Good to know</h2> <p>Mentionable differences to Laravels regular behaviour</p> <div class="custom-block tip"><p class="custom-block-title">INFO</p> <p>In most cases there is not much to consider. Just add files to your modules, keep the PSR-4 autoloading conventions in mind and you're good.<br>
+</span></code></pre></div><br> <br> <h2 id="good-to-know"><a href="#good-to-know" class="header-anchor">#</a> Good to know</h2> <p>Mentionable behaviour and possible exceptions to expectations.</p> <div class="custom-block tip"><p class="custom-block-title">INFO</p> <p>In most cases there is not much to consider. Just add files to your modules, keep the PSR-4 autoloading conventions in mind and you're good.<br>
 However, some components can only be correctly used if you know how Laravel handles them.</p></div> <br> <h3 id="views"><a href="#views" class="header-anchor">#</a> Views</h3> <p>To tell Laravel that you want to render a view file from a specific module, you need to use the double-colon syntax.<br>
 The <code>welcome.blade.php</code> from the example module <code>HelloWorld</code> could be rendered like this</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">return</span> <span class="token function">view</span><span class="token punctuation">(</span><span class="token double-quoted-string string">&quot;HelloWorld::welcome&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre></div><br> <h3 id="translations"><a href="#translations" class="header-anchor">#</a> Translations</h3> <p>For the translations applies the same as for the views. You can access them with the double-colon syntax.</p> <div class="language-php extra-class"><pre class="language-php"><code><span class="token keyword">echo</span> <span class="token function">trans</span><span class="token punctuation">(</span><span class="token single-quoted-string string">'HelloWorld::example.welcome'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -68,6 +68,6 @@ Unless <a href="/configuration/">otherwise configured</a>, the service provider 
       </a>
       →
     </span></p></div> </main></div><div class="global-ui"></div></div>
-    <script src="/assets/js/app.32db50d4.js" defer></script><script src="/assets/js/2.7f77a655.js" defer></script><script src="/assets/js/11.e094bf9a.js" defer></script>
+    <script src="/assets/js/app.3ebc009e.js" defer></script><script src="/assets/js/2.7f77a655.js" defer></script><script src="/assets/js/11.9fba0389.js" defer></script>
   </body>
 </html>

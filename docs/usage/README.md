@@ -91,7 +91,7 @@ class FancyService
 <br>
 
 ## Good to know
-Mentionable differences to Laravels regular behaviour
+Mentionable behaviour and possible exceptions to expectations.
 
 ::: tip INFO
 In most cases there is not much to consider. Just add files to your modules, keep the PSR-4 autoloading conventions in mind and you're good.  

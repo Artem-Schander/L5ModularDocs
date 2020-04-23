@@ -18,11 +18,11 @@ Older PHP / Laravel versions are supported by L5Modular v1.
 
 ## Generating A Module
 
-The built in Artisan command `php artisan make:module hello-world` generates a ready to use module in the `app/Modules` folder.  
+The built in Artisan command `php artisan make:module hello-world` generates a ready to use `HelloWorld` module in the `app/Modules` folder.  
 
 The welcome method in the generated controller `Http/Controllers/HelloWorldController.php`, the corresponding route in `routes/web.php` and the view `welcome.blade.php`, make it easy to dive in.  
 
-You should now be able to see the output of `Modules/HelloWorld/resources/views/welcome.blade.php` by opening `http://laravel-project.dev/hello-world` in your browser.  
+After executing the mentioned make command, you should be able to see the output of the view `resources/views/welcome.blade.php` by opening `http://laravel-project.dev/hello-world` in your browser.  
 
 ![welcome screen acreenshot](/assets/l5modular-screenshot.png)
 
