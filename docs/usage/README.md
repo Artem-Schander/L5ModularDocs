@@ -91,7 +91,7 @@ class FancyService
 <br>
 
 ## Good to know
-Mentionable behaviour and possible exceptions to expectations.
+Mentionable behaviour and possible deviations to expectations.
 
 ::: tip INFO
 In most cases there is not much to consider. Just add files to your modules, keep the PSR-4 autoloading conventions in mind and you're good.  
@@ -106,7 +106,7 @@ To tell Laravel that you want to render a view file from a specific module, you 
 The `welcome.blade.php` from the example module `HelloWorld` could be rendered like this:
 
 ```php
-return view("HelloWorld::welcome");
+return view('HelloWorld::welcome');
 ```
 
 <br>
