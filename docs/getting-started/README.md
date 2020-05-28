@@ -27,7 +27,7 @@ After executing the mentioned make command, you should be able to see the output
 ![welcome screen acreenshot](/assets/l5modular-screenshot.png)
 
 ::: warning
-The host can differ depending to your local development environment
+The host can differ depending on your local development environment
 :::
 
 
