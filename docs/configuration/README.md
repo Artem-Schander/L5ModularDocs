@@ -141,7 +141,7 @@ The service provider will load the file if it exists, apply the "web" middleware
 The make command will generate an empty `api.php` file.  
 The service provider will load the file if it exists, apply the "api" middleware and the "controllers" namespace of the corresponding module.
 3. **simple**  
-The make command will generate a `routes.php` file with a predifined resource route.  
+The make command will generate a `routes.php` file with a predefined resource route.  
 The service provider will load the file if it exists and apply the "controllers" namespace of the corresponding module.
 
 <br>
