@@ -135,7 +135,7 @@ Here you can define which type of route files will be generated and loaded. The 
 ```
 
 1. **web**  
-The make command will generate a `web.php` file with a predifined resource route.  
+The make command will generate a `web.php` file with a predefined resource route.  
 The service provider will load the file if it exists, apply the "web" middleware and the "controllers" namespace of the corresponding module.
 2. **api**  
 The make command will generate an empty `api.php` file.  
