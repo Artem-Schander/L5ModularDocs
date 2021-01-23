@@ -9,7 +9,7 @@ composer require artem-schander/l5-modular
 ```
 
 ::: tip REQUIREMENTS
-L5Modular v2 requires **at least** PHP 7.2 and Laravel 6.20.12  
+L5Modular v2 requires **at least** PHP 7.2 and Laravel 5.7  
 Older PHP / Laravel versions are supported by L5Modular v1.
 :::
 
